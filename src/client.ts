@@ -1,7 +1,7 @@
 import type { Schema } from "../amplify/data/resource"
 import { generateClient } from "aws-amplify/data"
 
-const client = gengrateClient<Schema>
+const client = generateClient<Schema>
 
 await client.mutations.addUserToGroup({
     groupName: "admin",
