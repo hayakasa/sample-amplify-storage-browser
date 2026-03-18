@@ -1,6 +1,6 @@
 import type { ClientSchema } from "@aws-amplify/backend"
 import { a, defineData } from "@aws-amplify/backend"
-import { addUserToGroup } from "./resource"
+import { addUserToGroup } from "./add-user-to-group/resource"
 
 const schema = a.schema({
   addUserToGroup: a
