@@ -7,11 +7,11 @@ const schema = a.schema({
     .mutation()
     .arguments({
       userId: a.string().required(),
-      groupName: a.string.required(),
+      groupName: a.string().required(),
     })
     .authorization((allow) => [allow.group("admin")])
-  .handler(a.handler.function(addUserToGroup))
-  .returns(a.json())
+    .handler(a.handler.function(addUserToGroup))
+    .returns(a.json())
 })
 
 export type Schema = ClientSchema<typeof schema>
@@ -19,6 +19,6 @@ export type Schema = ClientSchema<typeof schema>
 export const data = defineData({
   schema,
   authorizationModes: {
-    defaultAuthorizationMode: "iam"
+    defaultAuthorizationMode: "iam",
   },
 })
