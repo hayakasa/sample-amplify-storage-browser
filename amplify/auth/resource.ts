@@ -9,7 +9,10 @@ export const auth = defineAuth({
   loginWith: {
     email: true,
   },
-  groups: ['admin'],
+  groups: [
+    'admin',
+    'customer'
+  ],
   access: (allow) => [
     allow.resource(addUserToGroup).to(["addUserToGroup"])
   ],
