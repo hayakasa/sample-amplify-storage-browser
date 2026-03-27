@@ -7,9 +7,10 @@ import './App.css';
 
 import config from '../amplify_outputs.json';
 import { Amplify } from 'aws-amplify';
-import { Authenticator, Button, Heading } from '@aws-amplify/ui-react';
+import { Authenticator, Button, Flex, Heading } from '@aws-amplify/ui-react';
 import {
   BrowserRouter as Router,
+  Link as ReactRouterLink,
   Routes,
   Route
 } from 'react-router'
@@ -41,6 +42,12 @@ function App() {
             <div className="header">
               <h1>{`Hello ${user?.username}`}</h1>
               <Button onClick={signOut}>Sign out</Button>
+                <Flex>
+                  <ReactRouterLink to="/" >Home</ReactRouterLink>
+                  <ReactRouterLink to="/about" >About</ReactRouterLink>
+                  <ReactRouterLink to="/users" >Users</ReactRouterLink>
+                </Flex>
+
                 <Routes>
                   <Route path="/about" element={<About />} />
                   <Route path="/users" element={<Users />} />
