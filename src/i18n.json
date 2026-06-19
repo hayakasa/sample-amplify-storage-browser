@@ -1,0 +1,21 @@
+{
+  "ja": {
+    "Folder": "フォルダ",
+    "File": "ファイル",
+    "Upload files": "ファイルをアップロード",
+    "Create folder": "フォルダを作成",
+    "Delete": "削除",
+    "Cancel": "キャンセル",
+    "Download": "ダウンロード",
+    "Copy": "コピー",
+    "Move": "移動",
+    "Rename": "名前の変更",
+    "Search": "検索",
+    "Close": "閉じる",
+    "Locations": "場所",
+    "Create": "作成",
+    "Save": "保存",
+    "No files": "ファイルがありません",
+    "No folders": "フォルダがありません"
+  }
+}
