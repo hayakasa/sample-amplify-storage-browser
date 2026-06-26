@@ -14,7 +14,6 @@ import {
   Text, 
   Flex, 
   SearchField,
-  Heading,
   View
 } from '@aws-amplify/ui-react'
 import '@aws-amplify/ui-react/styles.css'
@@ -53,7 +52,7 @@ function ListUsers() {
     setIsOpen(true)
   }
 
-  const handleSubmit = async (e: React.SubmitEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (mode === 'add') {
       const { data: result, errors } = await client.mutations.adminCreateUser({
