@@ -7,7 +7,7 @@ import './App.css'
 
 import config from '../amplify_outputs.json'
 import { Amplify } from 'aws-amplify'
-import { fetchAuthSession } from "@aws-amplify/auth"
+import { fetchAuthSession } from "aws-amplify/auth"
 import { Authenticator, Button, Flex, Heading } from '@aws-amplify/ui-react'
 import {
   BrowserRouter as Router,

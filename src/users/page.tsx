@@ -3,7 +3,7 @@ import type { Schema } from "../../amplify/data/resource"
 import { generateClient } from "aws-amplify/data" 
 import config from '../../amplify_outputs.json'
 import { Amplify } from 'aws-amplify'
-import { getCurrentUser } from "@aws-amplify/auth"
+import { getCurrentUser } from "aws-amplify/auth"
 import { 
   Table, 
   TableHead, 
